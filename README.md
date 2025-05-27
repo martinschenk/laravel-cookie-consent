@@ -153,6 +153,30 @@ php artisan vendor:publish --provider="MartinSchenk\CookieConsent\CookieConsentS
 5. Locale cookies are stored only with user consent
 6. The settings can be reopened at any time via the footer link
 
+## 👥 Contributing
+
+**Contributions are highly welcome and appreciated!**
+
+This project is open for contributions, and we would love for you to help make it better. Whether you want to fix a bug, add a new feature, improve the documentation, or just give feedback, your help is welcome.
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on how to contribute to this project.
+
+### 🌱 Good First Issues
+
+Looking for something to work on? Issues labeled with [`good first issue`](https://github.com/martin-schenk/laravel-cookie-consent/labels/good%20first%20issue) are a great way to start contributing.
+
+### 🗺️ Roadmap
+
+We're planning to add the following features in future releases:
+
+- Support for additional cookie categories
+- More styling options and themes
+- Additional analytics services integration
+- Cookie expiration management
+- Support for older Laravel versions
+
+Feel free to pick up any of these tasks or suggest new ones!
+
 ## 📝 License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
