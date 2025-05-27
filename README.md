@@ -283,6 +283,18 @@ We're planning to add the following features in future releases:
 
 Feel free to pick up any of these tasks or suggest new ones!
 
+## ☕ Support this project
+
+If this package made your life a little easier,
+you can buy me a coffee – or make my day by sending a little note:
+
+📬 Send a postcard to:
+Martin Schenk
+Calle Hiruela 3, 5-7
+28035 Madrid, Spain
+
+Small gestures, big smiles. Danke! 💚
+
 ## 📝 License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
