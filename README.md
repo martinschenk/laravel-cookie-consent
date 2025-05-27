@@ -9,6 +9,19 @@
 [![Minimal Dependencies](https://img.shields.io/badge/Dependencies-Minimal-green.svg)](composer.json)
 [![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-blue.svg)](https://gdpr-info.eu/)
 
+## 📸 Screenshots
+
+### Cookie Consent Banner
+![Cookie Consent Banner](screenshots/initial-modal-laravel-cookie-consent-martin-schenk.png)
+
+### Cookie Settings Modal
+![Cookie Settings Modal](screenshots/edit-modal-laravel-cookie-consent-martin-schenk.png)
+
+### GDPR Compliance: No Analytics Cookies on Load
+![No Analytics Cookies on Initial Load](screenshots/initial-modal-with-dev-tools-laravel-cookie-consent-martin-schenk.png)
+
+*Screenshot shows the cookie consent banner with developer tools open, confirming no Google Analytics cookies are loaded before user consent.*
+
 ## ✨ Highlights
 
 - **Zero external dependencies** - No Livewire, no Filament, no JS frameworks
@@ -46,19 +59,6 @@ cat package.json | grep alpine
 # or in browser console on a page with Alpine.js:
 console.log(Alpine.version)
 ```
-
-## 📸 Screenshots
-
-### Cookie Consent Banner
-![Cookie Consent Banner](screenshots/initial-modal-laravel-cookie-consent-martin-schenk.png)
-
-### Cookie Settings Modal
-![Cookie Settings Modal](screenshots/edit-modal-laravel-cookie-consent-martin-schenk.png)
-
-### GDPR Compliance: No Analytics Cookies on Load
-![No Analytics Cookies on Initial Load](screenshots/initial-modal-with-dev-tools-laravel-cookie-consent-martin-schenk.png)
-
-*Screenshot shows the cookie consent banner with developer tools open, confirming no Google Analytics cookies are loaded before user consent.*
 
 ## 🧠 How It Works
 
