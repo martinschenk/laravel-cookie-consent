@@ -164,8 +164,15 @@ function cookieConsent() {
             
             // Check if settings are already saved
             const saved = localStorage.getItem('cookieConsent');
-            if (!saved) {
+            const cookieSaved = this.getCookie('cookieConsent');
+            
+            // Show modal if either localStorage OR cookie is missing
+            if (!saved || !cookieSaved) {
                 this.showModal = true;
+                // Clear any inconsistent state
+                if (saved && !cookieSaved) {
+                    localStorage.removeItem('cookieConsent');
+                }
             } else {
                 this.consent = JSON.parse(saved);
                 this.applyConsent();
@@ -176,6 +183,12 @@ function cookieConsent() {
                 this.showSettings();
                 window.CookieConsentGlobals.showSettingsModal = false;
             }
+        },
+        
+        // Helper to get a cookie value by name
+        getCookie(name) {
+            const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            return match ? match[2] : null;
         },
 
         acceptAll() {
@@ -208,10 +221,18 @@ function cookieConsent() {
             this.storeConsent();
             this.applyConsent();
             this.showSettingsModal = false;
+            this.showModal = false;
         },
 
         storeConsent() {
+            // Store in localStorage
             localStorage.setItem('cookieConsent', JSON.stringify(this.consent));
+            
+            // Also store as an actual cookie with 1 year expiration
+            const consentJSON = JSON.stringify(this.consent);
+            const expiryDate = new Date();
+            expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+            document.cookie = `cookieConsent=${encodeURIComponent(consentJSON)}; expires=${expiryDate.toUTCString()}; path=/; SameSite=Lax`;
         },
 
         applyConsent() {
