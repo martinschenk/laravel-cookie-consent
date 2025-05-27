@@ -63,7 +63,7 @@ The EU General Data Protection Regulation (GDPR) and similar privacy laws worldw
 
 **Result**: Google has no access to user interactions unless consent is given.
 
-### 🇳🇱 Personal Preferences
+### 🇪🇸 Personal Preferences
 
 The plugin currently stores a single preference: the language setting (locale).
 - The language is automatically read from the `<html lang="...">` attribute
