@@ -1,32 +1,32 @@
 ---
 name: Bug report
-about: Erstelle einen Fehlerbericht, um uns bei der Verbesserung zu helfen
+about: Create a report to help us improve
 title: '[BUG] '
 labels: bug
 assignees: ''
 ---
 
-**Beschreibe den Fehler**
-Eine klare und präzise Beschreibung des Fehlers.
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-**Reproduzieren**
-Schritte zum Reproduzieren des Verhaltens:
-1. Gehe zu '...'
-2. Klicke auf '....'
-3. Scrolle runter zu '....'
-4. Sieh den Fehler
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '...'
+3. Scroll down to '...'
+4. See error
 
-**Erwartetes Verhalten**
-Eine klare und präzise Beschreibung dessen, was du erwartet hast.
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
 **Screenshots**
-Falls zutreffend, füge Screenshots hinzu, um dein Problem zu erklären.
+If applicable, add screenshots to help explain your problem.
 
-**Umgebung (bitte fülle die folgenden Informationen aus):**
- - Laravel Version: [z.B. 11.0]
- - PHP Version: [z.B. 8.2]
- - Browser: [z.B. Chrome, Safari]
- - Plugin Version: [z.B. 0.1]
+**Environment (please complete the following information):**
+ - Laravel Version: [e.g. 11.0]
+ - PHP Version: [e.g. 8.2]
+ - Browser: [e.g. chrome, safari]
+ - Plugin Version: [e.g. 0.1]
 
-**Zusätzlicher Kontext**
-Füge hier weiteren Kontext zu deinem Problem hinzu.
+**Additional context**
+Add any other context about the problem here.

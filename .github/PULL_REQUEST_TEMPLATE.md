@@ -1,32 +1,32 @@
-## Beschreibung
+## Description
 
-Bitte beschreibe die Änderungen, die du in diesem Pull Request vornimmst. Füge Kontext zu deinen Änderungen hinzu und verlinke alle zugehörigen Issues.
+Please describe the changes you are making in this pull request. Provide context for your changes and link any related issues.
 
 Fixes # (issue)
 
-## Art der Änderung
+## Type of change
 
-Bitte lösche die Optionen, die nicht relevant sind.
+Please delete options that are not relevant.
 
-- [ ] Bugfix (nicht-breaking change, behebt ein Problem)
-- [ ] Neue Funktion (nicht-breaking change, fügt Funktionalität hinzu)
-- [ ] Breaking change (fix oder feature, das bestehende Funktionalität beeinträchtigen würde)
-- [ ] Dokumentationsupdate
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
 
-## Wie wurde getestet?
+## How Has This Been Tested?
 
-Bitte beschreibe die Tests, die du durchgeführt hast, um deine Änderungen zu verifizieren. Gib Anweisungen, damit wir reproduzieren können. Bitte liste auch alle relevanten Details für deine Testkonfiguration auf.
+Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration.
 
 - [ ] Test A
 - [ ] Test B
 
-## Checkliste:
+## Checklist:
 
-- [ ] Mein Code folgt dem Stil dieses Projekts (PSR-12)
-- [ ] Ich habe selbstständig einen Code-Review durchgeführt
-- [ ] Ich habe Kommentare in meinem Code hinzugefügt, besonders in schwierig zu verstehenden Bereichen
-- [ ] Ich habe entsprechende Änderungen an der Dokumentation vorgenommen
-- [ ] Meine Änderungen erzeugen keine neuen Warnungen
-- [ ] Ich habe Tests hinzugefügt, die meine Änderungen beweisen
-- [ ] Neue und bestehende Unit-Tests bestehen mit meinen Änderungen
-- [ ] Alle abhängigen Änderungen wurden zusammengeführt und veröffentlicht in nachgelagerten Modulen
+- [ ] My code follows the style guidelines of this project (PSR-12)
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass with my changes
+- [ ] Any dependent changes have been merged and published in downstream modules

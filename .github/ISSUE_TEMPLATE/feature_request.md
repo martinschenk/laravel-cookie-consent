@@ -1,22 +1,22 @@
 ---
 name: Feature request
-about: Schlage eine Idee für dieses Projekt vor
+about: Suggest an idea for this project
 title: '[FEATURE] '
 labels: enhancement
 assignees: ''
 ---
 
-**Bezieht sich deine Feature-Anfrage auf ein Problem? Bitte beschreiben.**
-Eine klare und präzise Beschreibung des Problems. Beispiel: Ich bin immer frustriert, wenn [...]
+**Is your feature request related to a problem? Please describe.**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-**Beschreibe die Lösung, die du dir wünschst**
-Eine klare und präzise Beschreibung dessen, was du erreichen möchtest.
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
 
-**Beschreibe Alternativen, die du in Betracht gezogen hast**
-Eine klare und präzise Beschreibung aller alternativen Lösungen oder Features, die du in Betracht gezogen hast.
+**Describe alternatives you've considered**
+A clear and concise description of any alternative solutions or features you've considered.
 
-**Wie würde dieses Feature der Community nutzen?**
-Beschreibe, warum dieses Feature für die meisten Benutzer des Plugins nützlich wäre.
+**How would this feature benefit the community?**
+Describe why this feature would be useful to most users of the plugin.
 
-**Zusätzlicher Kontext**
-Füge hier weiteren Kontext oder Screenshots zu deiner Feature-Anfrage hinzu.
+**Additional context**
+Add any other context or screenshots about the feature request here.

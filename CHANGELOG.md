@@ -1,29 +1,29 @@
 # Changelog
 
-Alle wichtigen Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
+All notable changes to this project will be documented in this file.
 
-Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
-und dieses Projekt folgt [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.1] - 2025-05-27
 
-### Hinzugefügt
-- Erstversion des Laravel Cookie Consent Plugins
-- DSGVO-konforme Cookie-Zustimmungs-Dialoge mit Opt-in für alle Cookie-Typen
-- Mehrsprachige Unterstützung (Deutsch, Englisch, Spanisch und Chinesisch)
-- Dynamische Google Analytics Integration
-- Cookie-Management für Spracheinstellungen
-- Blade-Komponenten für einfache Integration in bestehende Laravel-Anwendungen
-- Tailwind CSS Styling (optional anpassbar)
-- Mobile-First responsive Design
-- Verschiedene Optionen für Cookie-Einstellungs-Links im Footer
-- Configuration-Datei mit anpassbaren Optionen
-- Umfassende Dokumentation im README
+### Added
+- Initial version of the Laravel Cookie Consent plugin
+- GDPR-compliant cookie consent dialogs with opt-in for all cookie types
+- Multilingual support (German, English, Spanish, and Chinese)
+- Dynamic Google Analytics integration
+- Cookie management for language preferences
+- Blade components for easy integration into existing Laravel applications
+- Tailwind CSS styling (optionally customizable)
+- Mobile-first responsive design
+- Various options for cookie settings links in the footer
+- Configuration file with customizable options
+- Comprehensive documentation in README
 
-### Technische Merkmale
-- Keine externen JS-Framework-Abhängigkeiten
-- Verwendet Alpine.js und Vanilla JavaScript
-- Unterstützung für Laravel 11
-- Service Provider für einfache Integration
-- Flexible Konfiguration über .env-Datei
-- Vollständig testabgedeckte Komponenten und Services
+### Technical Features
+- No external JS framework dependencies
+- Uses Alpine.js and vanilla JavaScript
+- Support for Laravel 11
+- Service provider for easy integration
+- Flexible configuration via .env file
+- Fully test-covered components and services
