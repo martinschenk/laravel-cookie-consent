@@ -2,6 +2,8 @@
 
 **A lightweight, GDPR-compliant cookie consent system with minimal dependencies for Laravel 11**
 
+> Perfect for Laravel applications that need a simple, effective, and legally compliant cookie consent solution without the bloat of external JavaScript frameworks.
+
 [![Laravel Version](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 [![Minimal Dependencies](https://img.shields.io/badge/Dependencies-Minimal-green.svg)](composer.json)
@@ -153,6 +155,10 @@ php artisan vendor:publish --provider="MartinSchenk\CookieConsent\CookieConsentS
 5. Locale cookies are stored only with user consent
 6. The settings can be reopened at any time via the footer link
 
+## 🔍 Keywords
+
+Laravel cookie consent, GDPR cookie banner, Laravel 11 cookie solution, cookie consent manager, Laravel GDPR compliance, cookie opt-in system, Alpine.js cookie consent, privacy cookie banner, EU cookie law Laravel, cookie consent popup, minimal cookie notice, lightweight cookie consent, Laravel cookie management, cookie consent without JavaScript frameworks
+
 ## 👥 Contributing
 
 **Contributions are highly welcome and appreciated!**
@@ -167,13 +173,13 @@ Looking for something to work on? Issues labeled with [`good first issue`](https
 
 ### 🗺️ Roadmap
 
-We're planning to add the following features in future releases:
+I am planning to add the following features in future releases:
 
 - Support for additional cookie categories
 - More styling options and themes
 - Additional analytics services integration
 - Cookie expiration management
-- Support for older Laravel versions
+- Support for older and newerLaravel versions
 
 Feel free to pick up any of these tasks or suggest new ones!
 

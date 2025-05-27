@@ -3,6 +3,19 @@
     "description": "GDPR-compliant cookie consent system with minimal dependencies for Laravel 11",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "laravel",
+        "cookie",
+        "consent",
+        "gdpr",
+        "ccpa",
+        "cookie-banner",
+        "privacy",
+        "google-analytics",
+        "alpine-js",
+        "tailwind",
+        "multilingual"
+    ],
     "authors": [
         {
             "name": "Martin Schenk",
