@@ -150,6 +150,58 @@ Include the cookie consent component in your main layout file:
 <x-cookie-consent::cookie-consent />
 ```
 
+### Complete Example for Beginners
+
+Here's a complete example showing where to place the cookie consent component in a typical Laravel layout file:
+
+```blade
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config('app.name') }}</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+    <!-- Scripts and Styles -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body class="font-sans antialiased">
+    <div class="min-h-screen bg-gray-100">
+        <!-- Navigation -->
+        <nav class="bg-white border-b border-gray-200">
+            <!-- Your navigation content -->
+        </nav>
+
+        <!-- Page Content -->
+        <main class="py-4">
+            @yield('content')
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white border-t border-gray-200 py-4">
+            <div class="container mx-auto text-center text-sm text-gray-600">
+                <!-- Cookie Settings Link -->
+                <a href="javascript:void(0);" 
+                   onclick="window.openCookieSettings()" 
+                   class="text-gray-600 hover:text-gray-900">
+                    Cookie Settings
+                </a>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Cookie Consent Component (Place before closing body tag) -->
+    <x-cookie-consent::cookie-consent />
+</body>
+</html>
+```
+
+> **Note**: The cookie consent component should be placed before the closing `</body>` tag to ensure all other elements are loaded first. This provides the best user experience.
+
 ## 🔗 Adding a Cookie Settings Link to Your Footer
 
 An important feature is the ability to reopen the cookie settings menu at any time. Here are different implementation options:
