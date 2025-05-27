@@ -21,6 +21,32 @@
 - **Tailwind CSS** - Elegant, customizable design (optional)
 - **Mobile-First** - Fully responsive for all devices
 
+## 💻 Requirements
+
+- **Laravel**: Version 11.x required - [Laravel Installation](https://laravel.com/docs/11.x/installation)
+- **Tailwind CSS**: Version 3.x recommended - [Tailwind CSS for Laravel](https://tailwindcss.com/docs/guides/laravel)
+- **Alpine.js**: Version 3.x recommended (included with Laravel 11) - [Alpine.js Documentation](https://alpinejs.dev/)
+
+Laravel 11 includes Alpine.js by default, so no additional installation is needed for this dependency. Tailwind CSS is recommended but not strictly required - the component will still work with your own CSS, but you'll need to modify the published views to match your styling framework.
+
+### Checking Your Installed Versions
+
+Use these commands to verify your installed versions:
+
+```bash
+# Check Laravel version
+php artisan --version
+
+# Check Tailwind CSS version (if installed via npm)
+npx tailwindcss --version
+
+# Check Alpine.js version
+# For Laravel 11, inspect the package.json file or check the browser console:
+cat package.json | grep alpine
+# or in browser console on a page with Alpine.js:
+console.log(Alpine.version)
+```
+
 ## 📸 Screenshots
 
 ### Cookie Consent Banner
