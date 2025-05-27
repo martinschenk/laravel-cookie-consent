@@ -21,6 +21,19 @@
 - **Tailwind CSS** - Elegant, customizable design (optional)
 - **Mobile-First** - Fully responsive for all devices
 
+## 📸 Screenshots
+
+### Cookie Consent Banner
+![Cookie Consent Banner](screenshots/initial-modal-laravel-cookie-consent-martin-schenk.png)
+
+### Cookie Settings Modal
+![Cookie Settings Modal](screenshots/edit-modal-laravel-cookie-consent-martin-schenk.png)
+
+### GDPR Compliance: No Analytics Cookies on Load
+![No Analytics Cookies on Initial Load](screenshots/initial-modal-with-dev-tools-laravel-cookie-consent-martin-schenk.png)
+
+*Screenshot shows the cookie consent banner with developer tools open, confirming no Google Analytics cookies are loaded before user consent.*
+
 ## 🧠 How It Works
 
 This plugin provides a lightweight, GDPR-compliant cookie consent system for Laravel 11 - fully implemented with Blade, Alpine.js, and vanilla JavaScript. It works without Livewire, Inertia, or external dependencies.
