@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel Cookie Consent Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900 bg-gradient-to-r from-pink-500 via-purple-400 to-teal-400 text-transparent bg-clip-text">
+                Laravel Cookie Consent Demo
+            </h1>
+        </div>
+    </header>
+    
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white shadow overflow-hidden sm:rounded-lg p-6">
+            <h2 class="text-xl font-semibold mb-4">Installation</h2>
+            
+            <div class="bg-gray-800 rounded-lg p-4 text-white mb-6 overflow-x-auto">
+                <pre><code>composer require martin-schenk/laravel-cookie-consent
+php artisan vendor:publish --provider="MartinSchenk\CookieConsent\CookieConsentServiceProvider"</code></pre>
+            </div>
+            
+            <h2 class="text-xl font-semibold mb-4">Usage</h2>
+            
+            <div class="bg-gray-800 rounded-lg p-4 text-white mb-6 overflow-x-auto">
+                <pre><code>&lt;!-- In your layout file --&gt;
+&lt;x-cookie-consent::cookie-consent /&gt;</code></pre>
+            </div>
+            
+            <h2 class="text-xl font-semibold mb-4">Adding a Cookie Settings Link to Your Footer</h2>
+            
+            <div class="bg-gray-800 rounded-lg p-4 text-white mb-6 overflow-x-auto">
+                <pre><code>&lt;!-- Option 1: Direct JavaScript Call --&gt;
+&lt;a href="javascript:void(0);" onclick="window.openCookieSettings()" class="text-gray-400 hover:text-teal-400"&gt;
+    Cookie Settings
+&lt;/a&gt;
+
+&lt;!-- Option 2: For Complex Layouts --&gt;
+&lt;script&gt;
+// Trigger the cookie settings event
+document.dispatchEvent(new CustomEvent('open-cookie-settings'));
+&lt;/script&gt;
+
+&lt;!-- Option 3: Use as a Blade Component --&gt;
+&lt;x-cookie-consent::settings-link class="text-gray-400 hover:text-teal-400" /&gt;</code></pre>
+            </div>
+            
+            <div class="mt-8">
+                <h2 class="text-xl font-semibold mb-4">Live Demo</h2>
+                <p class="mb-4">This is a static HTML demo. To see the cookie consent in action, please install the package in a Laravel project.</p>
+                
+                <div class="mt-4">
+                    <button 
+                        onclick="window.openCookieSettings()" 
+                        class="px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded-md transition">
+                        Open Cookie Settings
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white">About</a>
+                <a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a>
+                
+                <!-- Cookie Settings Link -->
+                <a href="javascript:void(0);" 
+                   onclick="window.openCookieSettings()" 
+                   class="text-gray-300 hover:text-white">
+                    Cookie Settings
+                </a>
+            </div>
+            <div class="mt-4 text-center text-gray-400">
+                &copy; 2025 Laravel Cookie Consent by Martin Schenk
+            </div>
+        </div>
+    </footer>
+    
+    <!-- This would be where the cookie consent component gets rendered in Laravel -->
+    <script>
+        // Mock implementation for the demo
+        window.openCookieSettings = function() {
+            alert('This is a static demo. In a real Laravel application, the cookie settings modal would open here.');
+        };
+    </script>
+</body>
+</html>

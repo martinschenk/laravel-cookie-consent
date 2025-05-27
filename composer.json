@@ -1,0 +1,48 @@
+{
+    "name": "martin-schenk/laravel-cookie-consent",
+    "description": "GDPR-compliant cookie consent system with minimal dependencies for Laravel 11",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Schenk",
+            "email": "info@martin-schenk.es"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^10.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MartinSchenk\\CookieConsent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MartinSchenk\\CookieConsent\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/pint"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MartinSchenk\\CookieConsent\\CookieConsentServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
