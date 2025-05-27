@@ -7,6 +7,7 @@
 [![Laravel Version](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 [![Minimal Dependencies](https://img.shields.io/badge/Dependencies-Minimal-green.svg)](composer.json)
+[![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-blue.svg)](https://gdpr-info.eu/)
 
 ## ✨ Highlights
 
@@ -19,6 +20,54 @@
 - **Blade Components** - Easy integration into existing Laravel applications
 - **Tailwind CSS** - Elegant, customizable design (optional)
 - **Mobile-First** - Fully responsive for all devices
+
+## 🧠 How It Works
+
+This plugin provides a lightweight, GDPR-compliant cookie consent system for Laravel 11 - fully implemented with Blade, Alpine.js, and vanilla JavaScript. It works without Livewire, Inertia, or external dependencies.
+
+### 🇪🇺 GDPR Compliance
+
+The EU General Data Protection Regulation (GDPR) and similar privacy laws worldwide require explicit user consent before storing non-essential cookies. This package implements a fully compliant solution that:
+
+- Blocks all non-essential cookies by default
+- Provides clear opt-in choices for different cookie categories
+- Allows users to change their preferences at any time
+- Properly documents consent for compliance purposes
+
+### 🌐 Google Analytics Integration
+
+- The plugin blocks any connection to Google Analytics by default
+- Only when a user explicitly consents to the "Analytics" category, the GA script (gtag.js) is dynamically inserted into the `<head>`
+- Website owners only need to enter their Google Tag ID (G-XXXXXXXXXX) - no additional customization required
+
+### 🚫 Tracking Prevention When Declined
+
+- When analytics consent is declined, the GA script is not loaded
+- Additionally, the plugin attempts to delete all typical GA cookies, including:
+  - _ga, _gid, _gat_*
+  - __ga*, __gads
+- Even if some cookies cannot be fully deleted for technical reasons (e.g., HttpOnly), no tracking will occur as the JavaScript is not loaded
+
+**Result**: Google has no access to user interactions unless consent is given.
+
+### 🇳🇱 Personal Preferences
+
+The plugin currently stores a single preference: the language setting (locale).
+- The language is automatically read from the `<html lang="...">` attribute
+- When the user consents to the preferences category, a `locale=xx` cookie is set (e.g., `locale=en`), which Laravel can use for automatic language switching
+- If consent is revoked, the locale cookie is deleted
+
+### 🔧 Technical Implementation
+
+| Component | Technology |
+|-----------|------------|
+| UI / Modals | Blade + Tailwind |
+| Logic | Alpine.js (x-data) |
+| Consent Storage | localStorage |
+| Cookie Handling | JavaScript (document.cookie) |
+| Language Detection | document.documentElement.lang |
+| GA Activation | document.createElement('script') |
+| GA Blocking | No script inclusion + Cookie deletion |
 
 ## 🚀 Installation
 
@@ -146,14 +195,13 @@ The cookie consent component uses Tailwind CSS by default. You can publish the v
 php artisan vendor:publish --provider="MartinSchenk\CookieConsent\CookieConsentServiceProvider" --tag="cookie-consent-views"
 ```
 
-## 🔒 How It Works
+## 💯 Why Choose This Package?
 
-1. The package adds a cookie consent banner to your site
-2. Users can accept all, reject all, or customize their preferences
-3. Settings are saved in localStorage
-4. Google Analytics is loaded dynamically only when user consents
-5. Locale cookies are stored only with user consent
-6. The settings can be reopened at any time via the footer link
+This plugin is the ideal solution for modern Laravel 11 projects that want to:
+- Stay GDPR-compliant ✅
+- Maintain maximum control ✅
+- Avoid unnecessary external consent tools ✅
+- Remain fully customizable and open-source ✅
 
 ## 🔍 Keywords
 
@@ -173,13 +221,13 @@ Looking for something to work on? Issues labeled with [`good first issue`](https
 
 ### 🗺️ Roadmap
 
-I am planning to add the following features in future releases:
+We're planning to add the following features in future releases:
 
 - Support for additional cookie categories
 - More styling options and themes
 - Additional analytics services integration
 - Cookie expiration management
-- Support for older and newerLaravel versions
+- Support for older Laravel versions
 
 Feel free to pick up any of these tasks or suggest new ones!
 
