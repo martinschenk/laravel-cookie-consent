@@ -96,14 +96,14 @@ After publishing the package assets, you can configure the cookie consent system
 ```php
 // config/cookie-consent.php
 return [
-    'google_analytics_id' => env('GOOGLE_ANALYTICS_ID', ''),
+    'google_analytics_id' => '',  // Set your Google Analytics ID here (e.g. 'G-XXXXXXXXXX')
     
     'cookie_names' => [
         'consent' => 'cookieConsent',
         'locale' => 'locale',
     ],
     
-    'cookie_lifetime' => 31536000, // 1 year in seconds
+    'cookie_lifetime' => 31536000,  // 1 year in seconds
     
     'categories' => [
         'essential' => true,  // Always required
@@ -113,20 +113,7 @@ return [
 ];
 ```
 
-Add these settings to your `.env` file:
-
-```env
-# Cookie Consent Configuration
-COOKIE_CONSENT_ENABLED=true
-
-# Google Analytics ID
-GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
-
-# Cookie Settings (optional)
-COOKIE_CONSENT_ANALYTICS=false
-COOKIE_CONSENT_PREFERENCES=true
-COOKIE_CONSENT_COOKIE_LIFETIME=31536000
-```
+You can modify the configuration values directly in the published configuration file:
 
 ## 📊 Usage
 

@@ -9,7 +9,7 @@ return [
     | Your Google Analytics tracking ID.
     |
     */
-    'google_analytics_id' => env('GOOGLE_ANALYTICS_ID', ''),
+    'google_analytics_id' => '',  // Set your Google Analytics ID here (e.g. 'G-XXXXXXXXXX')
     
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ return [
     | Cookie lifetime in seconds (default: 1 year).
     |
     */
-    'cookie_lifetime' => env('COOKIE_CONSENT_COOKIE_LIFETIME', 31536000),
+    'cookie_lifetime' => 31536000,  // 1 year in seconds
     
     /*
     |--------------------------------------------------------------------------
@@ -46,7 +46,7 @@ return [
     */
     'categories' => [
         'essential' => true,                                        // Always required
-        'analytics' => env('COOKIE_CONSENT_ANALYTICS', false),      // Optional, for Google Analytics
-        'preferences' => env('COOKIE_CONSENT_PREFERENCES', false),  // Optional, for locale/language
+        'analytics' => false,      // Optional, for Google Analytics
+        'preferences' => false,  // Optional, for locale/language
     ],
 ];
