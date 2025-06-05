@@ -123,14 +123,14 @@ After publishing the package assets, you can configure the cookie consent system
 // config/cookie-consent.php
 return [
     'google_analytics_id' => '',  // Set your Google Analytics ID here (e.g. 'G-XXXXXXXXXX')
-    
+
     'cookie_names' => [
         'consent' => 'cookieConsent',
         'locale' => 'locale',
     ],
-    
+
     'cookie_lifetime' => 31536000,  // 1 year in seconds
-    
+
     'categories' => [
         'essential' => true,  // Always required
         'analytics' => false, // Optional
@@ -162,12 +162,12 @@ Here's how to integrate the cookie consent component in your Laravel layout:
 </head>
 <body>
     <!-- Your site content... -->
-    
+
     <!-- Footer with cookie settings link -->
     <footer>
         <a href="javascript:void(0);" onclick="window.openCookieSettings()">Cookie Settings</a>
     </footer>
-    
+
     <!-- Cookie Consent Component (Place before closing body tag) -->
     <x-cookie-consent::cookie-consent />
 </body>
@@ -212,10 +212,10 @@ document.dispatchEvent(new CustomEvent('open-cookie-settings'));
             <a href="{{ route('home') }}" class="text-gray-300 hover:text-white">Home</a>
             <a href="{{ route('imprint') }}" class="text-gray-300 hover:text-white">Imprint</a>
             <a href="{{ route('privacy') }}" class="text-gray-300 hover:text-white">Privacy Policy</a>
-            
+
             <!-- Cookie Settings Link -->
-            <a href="javascript:void(0);" 
-               onclick="window.openCookieSettings()" 
+            <a href="javascript:void(0);"
+               onclick="window.openCookieSettings()"
                class="text-gray-300 hover:text-white">
                 Cookie Settings
             </a>
@@ -230,6 +230,7 @@ This package comes with translations for:
 
 - English (en)
 - German (de)
+- Romanian (ro)
 - Spanish (es)
 - Chinese (Simplified) (zh_CN)
 
@@ -285,13 +286,13 @@ Feel free to pick up any of these tasks or suggest new ones!
 
 ## ☕ Support this project
 
-If this package made your life a little easier,  
+If this package made your life a little easier,
 you can [buy me a coffee](https://buymeacoffee.com/martinschenk) – or make my day by sending a little note:
 
-📬 **Send a postcard to:**  
-Martin Schenk  
-Calle Hiruela 3, 5-7  
-28035 Madrid, Spain  
+📬 **Send a postcard to:**
+Martin Schenk
+Calle Hiruela 3, 5-7
+28035 Madrid, Spain
 
 Small gestures, big smiles. Danke! 💚
 
