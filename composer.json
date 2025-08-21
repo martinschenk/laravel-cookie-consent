@@ -1,6 +1,6 @@
 {
     "name": "martin-schenk/laravel-cookie-consent",
-    "description": "GDPR-compliant cookie consent system with minimal dependencies for Laravel 11",
+    "description": "GDPR-compliant cookie consent system with minimal dependencies for Laravel 11 and 12",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -24,7 +24,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^11.0"
+        "laravel/framework": "^11.0|^12.0"
     },
     "require-dev": {
         "orchestra/testbench": "^9.0",
