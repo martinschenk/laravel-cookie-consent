@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Laravel 11/12 package that provides a lightweight, GDPR-compliant cookie consent system with minimal dependencies. The package is designed to work without external JavaScript frameworks like Livewire or Inertia, using only Alpine.js (included with Laravel 11/12) and vanilla JavaScript.
+This is a Laravel 11/12 package that provides a lightweight, GDPR-compliant cookie consent system with zero JavaScript framework dependencies. The package uses pure vanilla JavaScript (no Alpine.js, Livewire, or Inertia) and Tailwind CSS for styling.
 
 ## Commands
 
@@ -56,8 +56,8 @@ The package follows Laravel package conventions with a service provider-based ar
 
 ### Key Components
 
-1. **Cookie Consent Modal**: Alpine.js-powered modal system that appears on first visit
-2. **Settings Modal**: Detailed cookie category management interface
+1. **Cookie Consent Modal**: Vanilla JavaScript-powered modal system that appears on first visit
+2. **Settings Modal**: Detailed cookie category management interface with pure JS
 3. **JavaScript Integration**: Dynamic Google Analytics loading/unloading based on consent
 4. **Locale Management**: Automatic language detection and cookie-based persistence
 
@@ -69,7 +69,7 @@ The package follows Laravel package conventions with a service provider-based ar
 ### Data Flow
 1. Service provider registers the CookieConsentService singleton
 2. Blade components receive configuration from the service
-3. Alpine.js manages UI state and user interactions
+3. Vanilla JavaScript CookieConsentManager class manages UI state and user interactions
 4. Consent choices stored in localStorage (not cookies)
 5. Google Analytics scripts dynamically injected/removed based on consent
 
@@ -94,10 +94,11 @@ Tests use Orchestra Testbench for package testing in isolation:
 - Views can be published and customized by users
 - Use Tailwind CSS classes (users expected to have Tailwind installed)
 
-### JavaScript/Alpine.js
-- All JavaScript logic contained within Alpine.js components
-- No external JS dependencies beyond Alpine.js
-- Use vanilla JavaScript for cookie manipulation and script injection
+### JavaScript
+- All JavaScript logic contained within a vanilla JavaScript class (CookieConsentManager)
+- No external JS framework dependencies
+- Pure vanilla JavaScript for DOM manipulation, event handling, and cookie management
+- CSS transitions for smooth animations
 
 ### Translations
 - Support for en, de, es, zh_CN locales
