@@ -9,6 +9,45 @@
 [![Minimal Dependencies](https://img.shields.io/badge/Dependencies-Minimal-green.svg)](composer.json)
 [![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-blue.svg)](https://gdpr-info.eu/)
 
+## 🎭 Live Demo
+
+**Try it before you install it!** Check out our interactive demo to see the cookie consent system in action.
+
+### 🚀 Quick Demo Access
+
+1. **Fastest way - Direct download:**
+   ```bash
+   curl -O https://raw.githubusercontent.com/martinschenk/laravel-cookie-consent/main/demo/index.html
+   # Then open index.html in your browser
+   ```
+
+2. **Clone the repository:**
+   ```bash
+   git clone https://github.com/martinschenk/laravel-cookie-consent.git
+   cd laravel-cookie-consent/demo
+   ```
+
+3. **Open the demo:**
+   - **Option A:** Simply double-click the `demo/index.html` file
+   - **Option B:** Serve it locally:
+     ```bash
+     # Using Python (if installed)
+     python3 -m http.server 8080 --directory demo
+     # Then open http://localhost:8080
+     
+     # Or using PHP (if installed)
+     php -S localhost:8080 -t demo
+     # Then open http://localhost:8080
+     ```
+
+The demo showcases:
+- ✅ Cookie consent banner with Accept/Reject/Settings options
+- ✅ Detailed cookie settings modal
+- ✅ Pure vanilla JavaScript (no frameworks!)
+- ✅ Smooth CSS transitions
+- ✅ Consent status tracking
+- ✅ Interactive buttons to test all features
+
 ## 📸 Screenshots
 
 ### Cookie Consent Banner
