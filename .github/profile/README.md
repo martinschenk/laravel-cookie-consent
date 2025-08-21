@@ -1,6 +1,6 @@
 # Laravel Cookie Consent
 
-A lightweight, GDPR-compliant cookie consent system with minimal dependencies for Laravel 11.
+A lightweight, GDPR-compliant cookie consent system with minimal dependencies for Laravel 11 and 12.
 
 ## Why Choose This Package?
 
