@@ -4,9 +4,13 @@
 
 > Perfect for Laravel applications that need a simple, effective, and legally compliant cookie consent solution without the bloat of external JavaScript frameworks.
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/martin-schenk/laravel-cookie-consent.svg)](https://packagist.org/packages/martin-schenk/laravel-cookie-consent)
+[![Total Downloads](https://img.shields.io/packagist/dt/martin-schenk/laravel-cookie-consent.svg)](https://packagist.org/packages/martin-schenk/laravel-cookie-consent)
+[![Monthly Downloads](https://img.shields.io/packagist/dm/martin-schenk/laravel-cookie-consent.svg)](https://packagist.org/packages/martin-schenk/laravel-cookie-consent)
+[![GitHub Stars](https://img.shields.io/github/stars/martinschenk/laravel-cookie-consent.svg?style=social)](https://github.com/martinschenk/laravel-cookie-consent)
 [![Laravel Version](https://img.shields.io/badge/Laravel-11.x%20|%2012.x-red.svg)](https://laravel.com)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
-[![Minimal Dependencies](https://img.shields.io/badge/Dependencies-Minimal-green.svg)](composer.json)
+[![PHP Version](https://img.shields.io/packagist/php-v/martin-schenk/laravel-cookie-consent.svg)](https://packagist.org/packages/martin-schenk/laravel-cookie-consent)
+[![License](https://img.shields.io/packagist/l/martin-schenk/laravel-cookie-consent.svg)](LICENSE.md)
 [![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-blue.svg)](https://gdpr-info.eu/)
 
 ## 🎭 Live Demo
