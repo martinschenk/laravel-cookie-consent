@@ -24,8 +24,9 @@
 
 ## ✨ Highlights
 
-- **Zero external dependencies** - No Livewire, no Filament, no JS frameworks
-- **Alpine.js & Vanilla JS** - Uses Alpine.js that comes with Laravel
+- **Zero JavaScript dependencies** - Pure vanilla JavaScript, no Alpine.js, no Livewire, no Filament
+- **Pure Vanilla JavaScript** - No framework dependencies, works with bare Laravel
+- **Tailwind CSS Styling** - Beautiful, responsive design using Tailwind CSS classes
 - **GDPR-compliant** - Legally sound implementation with opt-in for all cookie types
 - **Multilingual** - German, English, Spanish and Chinese included
 - **Google Analytics Integration** - Dynamic loading and removal of GA scripts
@@ -38,9 +39,7 @@
 
 - **Laravel**: Version 11.x or 12.x required - [Laravel Installation](https://laravel.com/docs/installation)
 - **Tailwind CSS**: Version 3.x recommended - [Tailwind CSS for Laravel](https://tailwindcss.com/docs/guides/laravel)
-- **Alpine.js**: Version 3.x recommended (included with Laravel 11/12) - [Alpine.js Documentation](https://alpinejs.dev/)
-
-Laravel 11/12 includes Alpine.js by default, so no additional installation is needed for this dependency. Tailwind CSS is recommended but not strictly required - the component will still work with your own CSS, but you'll need to modify the published views to match your styling framework.
+Tailwind CSS is recommended but not strictly required - the component will still work with your own CSS, but you'll need to modify the published views to match your styling framework.
 
 ### Checking Your Installed Versions
 
@@ -53,16 +52,12 @@ php artisan --version
 # Check Tailwind CSS version (if installed via npm)
 npx tailwindcss --version
 
-# Check Alpine.js version
-# For Laravel 11/12, inspect the package.json file or check the browser console:
-cat package.json | grep alpine
-# or in browser console on a page with Alpine.js:
-console.log(Alpine.version)
+# No JavaScript framework version checks needed - uses pure vanilla JavaScript
 ```
 
 ## 🧠 How It Works
 
-This plugin provides a lightweight, GDPR-compliant cookie consent system for Laravel 11 and 12 - fully implemented with Blade, Alpine.js, and vanilla JavaScript. It works without Livewire, Inertia, or external dependencies.
+This plugin provides a lightweight, GDPR-compliant cookie consent system for Laravel 11 and 12 - fully implemented with Blade and pure vanilla JavaScript. It works without any JavaScript framework dependencies - no Alpine.js, Livewire, Inertia, or other external dependencies.
 
 ### 🇪🇺 GDPR Compliance
 
@@ -101,7 +96,7 @@ The plugin currently stores a single preference: the language setting (locale).
 | Component | Technology |
 |-----------|------------|
 | UI / Modals | Blade + Tailwind |
-| Logic | Alpine.js (x-data) |
+| Logic | Vanilla JavaScript |
 | Consent Storage | localStorage |
 | Cookie Handling | JavaScript (document.cookie) |
 | Language Detection | document.documentElement.lang |
@@ -258,7 +253,7 @@ This plugin is the ideal solution for modern Laravel 11/12 projects that want to
 
 ## 🔍 Keywords
 
-Laravel cookie consent, GDPR cookie banner, Laravel 11 cookie solution, Laravel 12 cookie solution, cookie consent manager, Laravel GDPR compliance, cookie opt-in system, Alpine.js cookie consent, privacy cookie banner, EU cookie law Laravel, cookie consent popup, minimal cookie notice, lightweight cookie consent, Laravel cookie management, cookie consent without JavaScript frameworks
+Laravel cookie consent, GDPR cookie banner, Laravel 11 cookie solution, Laravel 12 cookie solution, cookie consent manager, Laravel GDPR compliance, cookie opt-in system, vanilla JavaScript cookie consent, privacy cookie banner, EU cookie law Laravel, cookie consent popup, minimal cookie notice, lightweight cookie consent, Laravel cookie management, zero dependency cookie consent, no framework cookie banner
 
 ## 👥 Contributing
 

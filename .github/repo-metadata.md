@@ -6,7 +6,7 @@ When setting up your GitHub repository, use the following information to maximiz
 `laravel-cookie-consent`
 
 ## Description (for GitHub)
-A lightweight, GDPR-compliant cookie consent system with minimal dependencies for Laravel 11 and 12. Zero external JS frameworks, uses Alpine.js.
+A lightweight, GDPR-compliant cookie consent system with minimal dependencies for Laravel 11 and 12. Pure vanilla JavaScript, no framework dependencies.
 
 ## Topics/Tags
 Add these topics to your GitHub repository to improve discoverability:
