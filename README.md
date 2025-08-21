@@ -1,10 +1,10 @@
 # Laravel Cookie Consent
 
-**A lightweight, GDPR-compliant cookie consent system with minimal dependencies for Laravel 11**
+**A lightweight, GDPR-compliant cookie consent system with minimal dependencies for Laravel 11 and 12**
 
 > Perfect for Laravel applications that need a simple, effective, and legally compliant cookie consent solution without the bloat of external JavaScript frameworks.
 
-[![Laravel Version](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
+[![Laravel Version](https://img.shields.io/badge/Laravel-11.x%20|%2012.x-red.svg)](https://laravel.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 [![Minimal Dependencies](https://img.shields.io/badge/Dependencies-Minimal-green.svg)](composer.json)
 [![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-blue.svg)](https://gdpr-info.eu/)
@@ -36,11 +36,11 @@
 
 ## 💻 Requirements
 
-- **Laravel**: Version 11.x required - [Laravel Installation](https://laravel.com/docs/11.x/installation)
+- **Laravel**: Version 11.x or 12.x required - [Laravel Installation](https://laravel.com/docs/installation)
 - **Tailwind CSS**: Version 3.x recommended - [Tailwind CSS for Laravel](https://tailwindcss.com/docs/guides/laravel)
-- **Alpine.js**: Version 3.x recommended (included with Laravel 11) - [Alpine.js Documentation](https://alpinejs.dev/)
+- **Alpine.js**: Version 3.x recommended (included with Laravel 11/12) - [Alpine.js Documentation](https://alpinejs.dev/)
 
-Laravel 11 includes Alpine.js by default, so no additional installation is needed for this dependency. Tailwind CSS is recommended but not strictly required - the component will still work with your own CSS, but you'll need to modify the published views to match your styling framework.
+Laravel 11/12 includes Alpine.js by default, so no additional installation is needed for this dependency. Tailwind CSS is recommended but not strictly required - the component will still work with your own CSS, but you'll need to modify the published views to match your styling framework.
 
 ### Checking Your Installed Versions
 
@@ -54,7 +54,7 @@ php artisan --version
 npx tailwindcss --version
 
 # Check Alpine.js version
-# For Laravel 11, inspect the package.json file or check the browser console:
+# For Laravel 11/12, inspect the package.json file or check the browser console:
 cat package.json | grep alpine
 # or in browser console on a page with Alpine.js:
 console.log(Alpine.version)
@@ -62,7 +62,7 @@ console.log(Alpine.version)
 
 ## 🧠 How It Works
 
-This plugin provides a lightweight, GDPR-compliant cookie consent system for Laravel 11 - fully implemented with Blade, Alpine.js, and vanilla JavaScript. It works without Livewire, Inertia, or external dependencies.
+This plugin provides a lightweight, GDPR-compliant cookie consent system for Laravel 11 and 12 - fully implemented with Blade, Alpine.js, and vanilla JavaScript. It works without Livewire, Inertia, or external dependencies.
 
 ### 🇪🇺 GDPR Compliance
 
@@ -250,7 +250,7 @@ php artisan vendor:publish --provider="MartinSchenk\CookieConsent\CookieConsentS
 
 ## 💯 Why Choose This Package?
 
-This plugin is the ideal solution for modern Laravel 11 projects that want to:
+This plugin is the ideal solution for modern Laravel 11/12 projects that want to:
 - Stay GDPR-compliant ✅
 - Maintain maximum control ✅
 - Avoid unnecessary external consent tools ✅
@@ -258,7 +258,7 @@ This plugin is the ideal solution for modern Laravel 11 projects that want to:
 
 ## 🔍 Keywords
 
-Laravel cookie consent, GDPR cookie banner, Laravel 11 cookie solution, cookie consent manager, Laravel GDPR compliance, cookie opt-in system, Alpine.js cookie consent, privacy cookie banner, EU cookie law Laravel, cookie consent popup, minimal cookie notice, lightweight cookie consent, Laravel cookie management, cookie consent without JavaScript frameworks
+Laravel cookie consent, GDPR cookie banner, Laravel 11 cookie solution, Laravel 12 cookie solution, cookie consent manager, Laravel GDPR compliance, cookie opt-in system, Alpine.js cookie consent, privacy cookie banner, EU cookie law Laravel, cookie consent popup, minimal cookie notice, lightweight cookie consent, Laravel cookie management, cookie consent without JavaScript frameworks
 
 ## 👥 Contributing
 

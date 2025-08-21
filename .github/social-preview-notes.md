@@ -8,7 +8,7 @@ When creating a social preview image for GitHub, use the following specification
 
 ## Content for the image
 - Title: "Laravel Cookie Consent"
-- Subtitle: "GDPR-compliant cookie management for Laravel 11"
+- Subtitle: "GDPR-compliant cookie management for Laravel 11 & 12"
 - Visual elements:
   - Laravel logo
   - Cookie icon
