@@ -71,7 +71,7 @@ The demo showcases:
 - **Pure Vanilla JavaScript** - No framework dependencies, works with bare Laravel
 - **Tailwind CSS Styling** - Beautiful, responsive design using Tailwind CSS classes
 - **GDPR-compliant** - Legally sound implementation with opt-in for all cookie types
-- **Multilingual** - German, English, Spanish and Chinese included
+- **Multilingual** - English, German, Romanian, Spanish, and Chinese included
 - **Google Analytics Integration** - Dynamic loading and removal of GA scripts
 - **Locale Cookie Management** - Stores language preferences only with consent
 - **Blade Components** - Easy integration into existing Laravel applications
@@ -308,7 +308,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on how to 
 
 ### 🌱 Good First Issues
 
-Looking for something to work on? Issues labeled with [`good first issue`](https://github.com/martin-schenk/laravel-cookie-consent/labels/good%20first%20issue) are a great way to start contributing.
+Looking for something to work on? Issues labeled with [`good first issue`](https://github.com/martinschenk/laravel-cookie-consent/labels/good%20first%20issue) are a great way to start contributing.
 
 ### 🗺️ Roadmap
 
